@@ -4,10 +4,10 @@ function Footer() {
    
       <footer className="text-center py-10 text-gray-800">
         <div className="mt-4">
-          <p>Frontend Developer | React.js Developer</p>
+          <p className="my-1">Frontend Developer | React.js Developer</p>
+          <p className="my-1">doniabahig92@gmail.com</p>
         </div>
         <div className="flex justify-center gap-4">
-          <a href="mailto:doniabahig92@gmail.com">Email</a>
           <a
             href="https://github.com/Doniamagdy"
             target="_blank"
