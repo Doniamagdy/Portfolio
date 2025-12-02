@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body{
+background: linear-gradient(to right, #A7F3D0, #FEF9C3, #FBCFE8);
+}
+
+.hero-img{
+    
+}
