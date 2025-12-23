@@ -1,13 +1,15 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from "react-icons/fa";
-import { SiJavascript, SiTailwindcss } from "react-icons/si";
+import { SiJavascript, SiTailwindcss, SiTypescript  } from "react-icons/si";
 
 const skills = [
-  { icon: <FaHtml5 size={50} color="#e34c26" />, name:'HTML' },
-  { icon: <FaCss3Alt size={50} color="#1572B6" />,  name:'CSS'},
-  { icon: <FaBootstrap size={50} color="#7952B3" />, name:'BOOTSTRAP' },
-  { icon: <SiTailwindcss size={50} color="#38bdf8" />, name:'TAILWIND' },
-  { icon: <SiJavascript size={50} color="#F7DF1E" />, name:'JAVASCRIPT' },
-  { icon: <FaReact size={50} color="#61DBFB" />, name:'REACT'},
+  { icon: <FaHtml5 size={40} color="#e34c26" />, name:'HTML'},
+  { icon: <FaCss3Alt size={40} color="#1572B6" />,  name:'CSS'},
+  { icon: <FaBootstrap size={40} color="#7952B3" />, name:'BOOTSTRAP'},
+  { icon: <SiTailwindcss size={40} color="#38bdf8" />, name:'TAILWIND'},
+  { icon: <SiJavascript size={40} color="#F7DF1E" />, name:'JAVASCRIPT'},
+    { icon: <SiTypescript  size={40} color="#3178c6" />, name:'TYPESCRIPT'},
+
+  { icon: <FaReact size={40} color="#61DBFB" />, name:'REACT'},
 ];
 
 function Skills() {
@@ -16,7 +18,7 @@ function Skills() {
           <h2 className="text-xl font-bold text-gray-900 mb-2">Skills</h2>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 sm:gap-6 md:gap-8">
           {skills.map((skill, i) => (
             <div
               key={i}
