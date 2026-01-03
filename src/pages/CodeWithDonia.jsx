@@ -7,6 +7,12 @@ const resources = [
     category: "JavaScript Basics",
     description: "Learn the fundamentals of JavaScript programming",
   },
+   {
+    title: "JavaScript Variables",
+    url: "https://drive.google.com/file/d/13qD_2Q30HJtm868EdAKxIMGR9s3F9yBw/view?usp=sharing",
+    category: "JavaScript Basics",
+    description: "Learn the fundamentals of JavaScript programming",
+  },
 ];
 
 const CodeWithDonia = () => {
