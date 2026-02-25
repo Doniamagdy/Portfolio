@@ -1,12 +1,12 @@
 // components/ProjectCard.jsx
-function ProjectCard({ image, name, desc, link, repo, tools }) {
+function ProjectCard({ projImage, name, desc, link, repo, tools }) {
   return (
     <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col  h-full">
       
       {/* Header Image */}
       <div className="relative overflow-hidden h-48 sm:h-52 md:h-56">
         <img 
-          src={image} 
+          src={projImage} 
           alt={`${name} project screenshot`}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
         />
