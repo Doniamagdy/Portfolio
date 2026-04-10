@@ -1,32 +1,9 @@
 import ProjectCard from "../components/ProjectCard";
-import projectImg from "../assets/Screenshot 2025-12-02 131553.png";
-import projectImg2 from "../assets/Screenshot 2026-02-18 162051.png";
+import {data} from "../data.js"
 import Tabs from "../components/Tabs";
 
 const Projects = () => {
-  const data = [
-    {
-      id: 1,
-      image: "https://via.placeholder.com/400x300",
-      img: projectImg,
-      name: "Lanoura E-commerce",
-      desc: "A responsive E-commerce built with React and Tailwind.",
-      link: "https://lunora-ecommerce.vercel.app",
-      repo: "https://github.com/Doniamagdy/Lunora-Ecommerce",
-      tools: ["React", "Tailwind", "React Query"],
-    },
-
-    {
-      id: 2,
-      image: "https://via.placeholder.com/400x300",
-      img: projectImg2,
-      name: "Ibadah Online",
-      desc: "A responsive Website for Ibadah built with React and Tailwind.",
-      link: "https://www.ibadah.online/",
-      tools: ["React", "Tailwind"],
-    },
-  ];
-
+  
   return (
     <div className="w-full min-h-screen ">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
