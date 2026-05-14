@@ -24,7 +24,8 @@ export const data = [
       img: projectImg2,
       name: "The Royal",
       desc: "A responsive booking system for hotels built with React and Tailwind.",
-      link: "https://www.ibadah.online/",
+      link: "https://hotel-management-system-rho-red.vercel.app/",
+      repo:"https://github.com/Doniamagdy/Hotel-Management-System",
       tools: ["React", "Tailwind", "supabase"],
     },
     {
