@@ -1,5 +1,5 @@
 import projectImg from "./assets/Screenshot 2025-12-02 131553.png";
-import projectImg2 from "./assets/Screenshot 2026-02-18 162051.png";
+import projectImg2 from "./assets/Screenshot 2026-05-14 193407.png";
 import projectImg3 from "./assets/react-weather-app.png";
 import projectImg4 from "./assets/perfume-crud.png";
 import projectImg5 from "./assets/bookmarker.png";
@@ -22,10 +22,10 @@ export const data = [
       id: 2,
       image: "https://via.placeholder.com/400x300",
       img: projectImg2,
-      name: "Ibadah Online",
-      desc: "A responsive Website for Ibadah built with React and Tailwind.",
+      name: "The Royal",
+      desc: "A responsive booking system for hotels built with React and Tailwind.",
       link: "https://www.ibadah.online/",
-      tools: ["React", "Tailwind"],
+      tools: ["React", "Tailwind", "supabase"],
     },
     {
       id: 3,

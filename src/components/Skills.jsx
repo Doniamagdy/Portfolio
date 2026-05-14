@@ -7,7 +7,7 @@ const skills = [
   { icon: <FaBootstrap size={40} color="#7952B3" />, name:'BOOTSTRAP'},
   { icon: <SiTailwindcss size={40} color="#38bdf8" />, name:'TAILWIND'},
   { icon: <SiJavascript size={40} color="#F7DF1E" />, name:'JAVASCRIPT'},
-    { icon: <SiTypescript  size={40} color="#3178c6" />, name:'TYPESCRIPT'},
+    // { icon: <SiTypescript  size={40} color="#3178c6" />, name:'TYPESCRIPT'},
 
   { icon: <FaReact size={40} color="#61DBFB" />, name:'REACT'},
 ];

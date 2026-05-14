@@ -8,7 +8,7 @@ const Tabs = () => {
     { to: "/projects", label: "Projects" },
     { to: "/education", label: "Education" },
     { to: "/work", label: "Work Experience" },
-    { to: "/code-with-donia", label: "Code with Donia" }
+    // { to: "/code-with-donia", label: "Code with Donia" }
   ];
 
   return (
