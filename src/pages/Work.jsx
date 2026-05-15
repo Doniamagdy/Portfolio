@@ -3,9 +3,9 @@ import Tabs from "../components/Tabs"
 
 const workExperience = [
   {
-    title: "Frontend Instructor",
+    title: "Freelance Frontend Instructor",
     company: "Function for training and projects",
-    date: "Dec 2024 – current",
+    date: "Jan 2025 – current",
     description: [
       "Delivered live coding sessions on HTML, CSS, JavaScript, and React.js to beginner and intermediate students.",
       "Created structured lesson plans, assignments, and coding challenges to guide student learning.",
