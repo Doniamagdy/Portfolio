@@ -5,10 +5,11 @@ function Contact() {
   return (
     <div className="mt-6 bg-white p-6 rounded-xl shadow-md ">
       <h2 className="text-xl font-bold text-gray-900 mb-4">Contact</h2>
-       <div className="flex justify-between">
+
+    <div className="flex flex-col sm:flex-row sm:justify-between gap-3 sm:gap-0">
   <span className="flex items-center gap-1">
     <FaEnvelope />
-    doniabahig92@gmail.com
+    <span className="break-all">doniabahig92@gmail.com</span>
   </span>
 
   <span className="flex items-center gap-1">
