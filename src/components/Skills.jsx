@@ -1,42 +1,81 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from "react-icons/fa";
-import { SiJavascript, SiTailwindcss, SiTypescript  } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaBootstrap,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa";
+
+import {
+  SiJavascript,
+  SiTailwindcss,
+  SiRedux,
+  SiReactrouter,
+  SiAxios,
+  SiVite,
+  SiReactquery,
+  SiReacthookform,
+} from "react-icons/si";
+
+import { TbApi } from "react-icons/tb";
 
 const skills = [
-  { icon: <FaHtml5 size={40} color="#e34c26" />, name:'HTML'},
-  { icon: <FaCss3Alt size={40} color="#1572B6" />,  name:'CSS'},
-  { icon: <FaBootstrap size={40} color="#7952B3" />, name:'BOOTSTRAP'},
-  { icon: <SiTailwindcss size={40} color="#38bdf8" />, name:'TAILWIND'},
-  { icon: <SiJavascript size={40} color="#F7DF1E" />, name:'JAVASCRIPT'},
-    // { icon: <SiTypescript  size={40} color="#3178c6" />, name:'TYPESCRIPT'},
-
-  { icon: <FaReact size={40} color="#61DBFB" />, name:'REACT'},
+  { icon: <FaHtml5 size={28} color="#E34F26" />, name: "HTML5" },
+  { icon: <FaCss3Alt size={28} color="#1572B6" />, name: "CSS3" },
+  { icon: <FaBootstrap size={28} color="#7952B3" />, name: "Bootstrap" },
+  { icon: <SiTailwindcss size={28} color="#38BDF8" />, name: "Tailwind" },
+  { icon: <SiJavascript size={28} color="#F7DF1E" />, name: "JavaScript" },
+  { icon: <FaReact size={28} color="#61DAFB" />, name: "React" },
+  { icon: <SiRedux size={28} color="#764ABC" />, name: "Redux Toolkit" },
+  { icon: <SiAxios size={28} color="#5A29E4" />, name: "Axios" },
+  { icon: <SiReactrouter size={28} color="#CA4245" />, name: "React Router" },
+  { icon: <SiReactquery size={28} color="#FF4154" />, name: "React Query" },
+  {
+    icon: <SiReacthookform size={28} color="#EC5990" />,
+    name: "React Hook Form",
+  },
+  { icon: <TbApi size={28} color="#00C2FF" />, name: "RESTful APIs" },
+  { icon: <SiVite size={26} color="#646CFF" />, name: "Vite" },
+  { icon: <FaGitAlt size={26} color="#F05032" />, name: "Git" },
+  { icon: <FaGithub size={26} color="#000000" />, name: "Github" },
 ];
 
-function Skills() {
+function Skills() { 
   return (
-  <div className="mt-6 bg-white p-6 rounded-xl shadow-md">
-          <h2 className="text-xl font-bold text-gray-900 mb-2">Skills</h2>
+    <section className=" galaxy-card p-6 md:p-8 mt-6  rounded-xl shadow-md ">
 
-        {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 md:gap-8">
-          {skills.map((skill, i) => (
-            <div
-              key={i}
-              className="group flex flex-col items-center justify-center p-6 sm:p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 cursor-pointer border border-gray-100"
-            >
-              {/* Icon */}
-              <div className=" transform group-hover:scale-110 transition-transform duration-300">
-                {skill.icon}
-              </div>
-              
-              {/* Skill Name */}
-              <p className="text-xs sm:text-sm font-semibold text-gray-700 text-center pt-2 ">
-                {skill.name}
-              </p>
-            </div>
-          ))}
-        </div>
+      <h2 className="text-xl font-bold mb-4">
+        Skills & Tools
+      </h2>
+
+      {/* Responsive Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="
+              flex
+              items-center
+              gap-3
+              px-5
+              py-5
+            
+             
+            "
+          >
+            {skill.icon}
+
+            <span className="text-md font-medium whitespace-nowrap">
+              {skill.name}
+            </span>
+
+          </div>
+        ))}
+
       </div>
+    </section>
   );
 }
 

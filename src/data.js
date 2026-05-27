@@ -1,4 +1,4 @@
-import projectImg from "./assets/Screenshot 2025-12-02 131553.png";
+import projectImg from "./assets/Lanoura.png";
 import projectImg2 from "./assets/Screenshot 2026-05-14 193407.png";
 import projectImg3 from "./assets/react-weather-app.png";
 import projectImg4 from "./assets/perfume-crud.png";

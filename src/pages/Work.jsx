@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Tabs from "../components/Tabs"
 
 const workExperience = [
   {
@@ -61,61 +60,60 @@ const workExperience = [
     ],
   },
 ];
-
 const Work = () => {
   return (
-    <div className="w-full min-h-screen ">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <Tabs />
+    <section className="relative py-10">
 
-        <div className="relative mt-8">
-          <div className="hidden md:block absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500"></div>
+      {/* LINE */}
+      <div className="absolute left-4 md:left-8 top-0 bottom-0 w-[3px] bg-purple-500 shadow-[0_0_12px_#a855f7]"></div>
 
-          <div className="space-y-8 sm:space-y-10 md:space-y-12">
-            {workExperience.map((job, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ scale: 1.02, y: -5 }}
-                className="relative md:ml-20"
-              >
-                <div className="hidden md:block absolute -left-[4.6rem] top-6 w-4 h-4 bg-purple-500 rounded-full border-4 border-white shadow-lg"></div>
+      <div className="space-y-10">
 
-                <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl p-6 sm:p-8 border border-gray-100">
-                  <div className="mb-4 sm:mb-5">
-                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
-                      {job.title}
-                    </h2>
-                    <p className="text-base sm:text-lg text-purple-600 font-semibold mb-2">
-                      {job.company}
-                    </p>
-                    <div className="flex items-center gap-2 text-sm sm:text-base text-gray-500">
-                      <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                      </svg>
-                      <span>{job.date}</span>
-                    </div>
-                  </div>
+        {workExperience.map((job, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ y: -6 }}
+            className="relative md:ml-20 ml-10"
+          >
 
-                  <ul className="space-y-3">
-                    {job.description.map((item, i) => (
-                      <li key={i} className="flex items-start gap-3 text-sm sm:text-base text-gray-700">
-                        <span className="flex-shrink-0 w-1.5 h-1.5 bg-purple-500 rounded-full mt-2"></span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
+            {/* CIRCLE */}
+            <div className="absolute -left-[2.35rem] md:-left-[3.6rem] top-7 w-5 h-5 rounded-full bg-purple-500 border-4  shadow-[0_0_15px_#a855f7]"></div>
+
+            {/* CARD */}
+            <div className="galaxy-card p-6">
+
+              <h2 className=" text-2xl md:text-3xl font-bold">
+                {job.title}
+              </h2>
+
+              <p className=" text-lg font-semibold mt-1">
+                {job.company}
+              </p>
+
+              <div className="flex items-center gap-2 mt-3 text-md">
+                <span>📅</span>
+                <span>{job.date}</span>
+              </div>
+
+              <ul className="mt-6 space-y-4">
+                {job.description.map((item, i) => (
+                  <li
+                    key={i}
+                    className="flex items-start gap-3 text-gray-200 leading-8"
+                  >
+                    <span className="text-purple-400 text-lg">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+            </div>
+          </motion.div>
+        ))}
+
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Work
+export default Work;

@@ -1,7 +1,8 @@
-// components/ProjectCard.jsx
+
+
 function ProjectCard({ projImage, name, desc, link, repo, tools }) {
   return (
-    <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 flex flex-col  h-full">
+    <div className="galaxy-card md:p-8group  rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2  flex flex-col  h-full">
       
       {/* Header Image */}
       <div className="relative overflow-hidden h-48 sm:h-52 md:h-56">
@@ -10,30 +11,29 @@ function ProjectCard({ projImage, name, desc, link, repo, tools }) {
           alt={`${name} project screenshot`}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
       </div>
 
       {/* Content */}
       <div className="p-5 sm:p-6 flex flex-col flex-grow space-y-4">
         
         {/* Title */}
-        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 line-clamp-2">
+        <h3 className="text-xl sm:text-2xl font-bold  line-clamp-2">
           {name}
         </h3>
 
         {/* Description */}
-        <p className="text-sm sm:text-base text-gray-600 leading-relaxed flex-grow line-clamp-3">
+        <p className="text-sm sm:text-base  leading-relaxed flex-grow line-clamp-3">
           {desc}
         </p>
 
         {/* Tools/Technologies */}
-        <div className="pt-2 border-t border-gray-100">
+        <div className="py-6 border-b border-gray-100">
          
           <div className="flex flex-wrap gap-2">
             {tools.map((tool, index) => (
               <span
                 key={index}
-                className="px-2 sm:px-3 py-1 bg-purple-50 text-gray-700 rounded-full text-xs sm:text-sm font-medium"
+                className=" sm:px-3 p-2 bg-white text-gray-900 rounded-full text-xs sm:text-sm font-medium"
               >
                 {tool}
               </span>
@@ -62,6 +62,8 @@ function ProjectCard({ projImage, name, desc, link, repo, tools }) {
           </a>
         </div>
       </div>
+
+
     </div>
   );
 }
