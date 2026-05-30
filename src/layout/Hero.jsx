@@ -3,42 +3,39 @@ import { FaReact } from "react-icons/fa";
 function Hero() {
   return (
     <section className="w-full min-h-[500px] flex items-center relative z-10">
-
       <div className="w-11/12 md:w-4/5 mx-auto flex flex-col md:flex-row items-center justify-between gap-16 py-20">
-
         {/* LEFT CONTENT */}
         <div className="space-y-5 text-center md:text-left">
-
           <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight">
             Donia Magdy
           </h1>
 
-          <p className="text-purple-200 tracking-[5px] text-sm md:text-lg">
+          <p className="text-purple-200 tracking-wide sm:tracking-wider md:tracking-[5px] text-xs sm:text-sm md:text-lg">
             FRONTEND DEVELOPER | REACT.JS DEVELOPER
           </p>
 
-         <a className="bg-violet-400 text-amber-50 p-3 rounded-md "   href="/Donia-Magdy-Resume.pdf"   download>Download Resume</a>
-
-
+          <a
+            className="bg-violet-400 text-amber-50 p-3 rounded-md "
+            href="/Donia-Magdy-Resume.pdf"
+            download
+          >
+            Download Resume
+          </a>
         </div>
 
         {/* RIGHT SIDE */}
         <div className="orbit-system">
-
           {/* SVG ORBITS */}
           <svg className="orbit-svg" viewBox="0 0 220 220">
-
             <defs>
-
               <filter id="glow">
-                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur" />
 
                 <feMerge>
-                  <feMergeNode in="blur"/>
-                  <feMergeNode in="SourceGraphic"/>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
                 </feMerge>
               </filter>
-
             </defs>
 
             {/* orbit 1 */}
@@ -53,7 +50,7 @@ function Hero() {
               opacity="0.95"
               filter="url(#glow)"
               style={{
-                filter: "drop-shadow(0 0 8px rgba(255,255,255,.7))"
+                filter: "drop-shadow(0 0 8px rgba(255,255,255,.7))",
               }}
             />
 
@@ -70,7 +67,7 @@ function Hero() {
               transform="rotate(60 110 110)"
               filter="url(#glow)"
               style={{
-                filter: "drop-shadow(0 0 8px rgba(255,255,255,.7))"
+                filter: "drop-shadow(0 0 8px rgba(255,255,255,.7))",
               }}
             />
 
@@ -87,10 +84,9 @@ function Hero() {
               transform="rotate(-60 110 110)"
               filter="url(#glow)"
               style={{
-                filter: "drop-shadow(0 0 8px rgba(255,255,255,.7))"
+                filter: "drop-shadow(0 0 8px rgba(255,255,255,.7))",
               }}
             />
-
           </svg>
 
           {/* CENTER GLOW */}
@@ -103,17 +99,12 @@ function Hero() {
 
           {/* MOVING SMALL REACT */}
           <div className="react-orbit">
-
             <div className="icon-react">
               <FaReact />
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }
