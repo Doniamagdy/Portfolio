@@ -1,5 +1,3 @@
-
-
 function ProjectCard({ projImage, name, desc, link, repo, tools }) {
   return (
     <div className="galaxy-card md:p-8group  rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2  flex flex-col  h-full">

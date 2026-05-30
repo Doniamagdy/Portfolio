@@ -1,4 +1,4 @@
-import projectImg from "./assets/Lanoura.png";
+import projectImg from "./assets/lunora.png";
 import projectImg2 from "./assets/Screenshot 2026-05-14 193407.png";
 import projectImg3 from "./assets/react-weather-app.png";
 import projectImg4 from "./assets/perfume-crud.png";
@@ -11,7 +11,7 @@ export const data = [
       id: 1,
       image: "https://via.placeholder.com/400x300",
       img: projectImg,
-      name: "Lanoura E-commerce",
+      name: "Lunora E-commerce",
       desc: "A responsive E-commerce built with React and Tailwind.",
       link: "https://lunora-ecommerce.vercel.app",
       repo: "https://github.com/Doniamagdy/Lunora-Ecommerce",

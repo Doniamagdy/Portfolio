@@ -9,56 +9,15 @@ const workExperience = [
       "Taught HTML, CSS, Bootstrap, and JavaScript to university students through hands-on sessions and project-based learning.",
       "Monitored student progress and provided feedback.",
       "Currently preparing a React course focused on building an e-commerce application with API integration, error handling, and state management.",
-    ],
-  },
-  {
-    title: "Admin",
-    company: "Trade Fairs International & Mercury Communication",
-    date: "Dec 2022 – Jun 2023",
+    ]}, { 
+     title: "Backend Developer",
+    company: "Saint George import & export",
+    date: "Aug 2022",
     description: [
-      "Contact with CEO, MD, CTO and IT Mangers inviting them to Cairo ICT and Caisec.",
-    ],
-  },
-  {
-    title: "High School Assistant Principal",
-    company: "Dover American School",
-    date: "Aug 2020 – Apr 2021",
-    description: [
-      "Collaborated with the Principal to oversee academic staff and ensuring alignment with school policies and performance standards.",
-      "Monitored the accurate entry of student grades into the school system and submitting weekly performance reports to the Principal.",
-      "Conducted daily classroom observations to evaluate instructional quality and support teachers.",
-    ],
-  },
-  {
-    title: "Elementary German Teacher",
-    company: "Dover American School",
-    date: "Aug 2018 – Jun 2020",
-    description: [
-      "Developed engaging curriculum plans and adaptive teaching methods tailored to student needs.",
-      "Delivered personalized tutoring to support individual language development.",
-      "Strengthened student skills in reading, writing, speaking, and listening through immersive, interactive lessons.",
-    ],
-  },
-  {
-    title: "Kindergarten German Teacher",
-    company: "Menese International School",
-    date: "Aug 2015 – Jun 2018",
-    description: [
-      "Delivered lessons that integrated academic content with personal, social, and emotional development.",
-      "Engaged students using diverse instructional methods, including songs, videos, and hands-on activities.",
-      "Created original educational materials such as books, flashcards, videos, and interactive games to enhance learning.",
-    ],
-  },
-  {
-    title: "Elementary German Teacher",
-    company: "Alsayda Aicha School",
-    date: "Aug 2014 – Jun 2015",
-    description: [
-      "Delivered interactive lessons using videos, presentations, and online games to maximize engagement.",
-      "Enhanced teaching strategies through continuous professional development and educational seminars.",
-      "Integrated modern teaching tools to foster a collaborative and student-centered learning environment.",
-    ],
-  },
+      "Assisted in developing dynamic web applications using PHP, MySQL, phpMyAdmin.",
+     
+    ],}
+  
 ];
 const Work = () => {
   return (

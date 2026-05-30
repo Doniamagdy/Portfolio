@@ -26,7 +26,7 @@ const certificates = [
     url: "https://drive.google.com/file/d/1dEIuc2PTgngUp2qync4SmERVwJ0CUzq7/view?usp=sharing",
   },
   {
-    title: "Backend Development Training",
+    title: "Backend Development Course",
     issuer: "Egyptian Council For Training",
     date: "March 2022",
     url: "https://drive.google.com/file/d/1_FFe4ejv89pjsoOmx77RkrAPByOZnxlJ/view?usp=sharing",

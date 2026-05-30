@@ -17,6 +17,9 @@ function Hero() {
             FRONTEND DEVELOPER | REACT.JS DEVELOPER
           </p>
 
+         <a className="bg-violet-400 text-amber-50 p-3 rounded-md "   href="/Donia-Magdy-Resume.pdf"   download>Download Resume</a>
+
+
         </div>
 
         {/* RIGHT SIDE */}
