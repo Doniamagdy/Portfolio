@@ -6,9 +6,8 @@ const workExperience = [
     company: "Function for training and projects",
     date: "Jan 2025 – current",
     description: [
-      "Taught HTML, CSS, Bootstrap, and JavaScript to university students through hands-on sessions and project-based learning.",
-      "Monitored student progress and provided feedback.",
-      "Currently preparing a React course focused on building an e-commerce application with API integration, error handling, and state management.",
+     " Delivered frontend curriculum (HTML, CSS, JavaScript, Bootstrap) to university students using project-based learning.",
+"Applied project-based learning approach to improve practical coding skills."
     ],
   },
   {
